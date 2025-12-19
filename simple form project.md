@@ -2,6 +2,9 @@
 
 ___
 
+The client has provided a simple HTML and CSS form that collects user information such as name, email, and message. To ensure proper version control, change tracking, and the ability to recover from errors, Git is used to manage the development process
+___
+
 Before starting, i ensured:
 
 1. Git was installed on my machine
@@ -203,7 +206,7 @@ Below are the steps I took:
 - While in my simple-form directory, I staged and committed the changes made to form.html and style.css.
 
 ```powershell
-# To stage the changes 
+# To stage the changes
 git add form.html style.css
 
 # To commit changes
@@ -221,7 +224,7 @@ ___
 
 **Objective:**
 
-To Push the latest changes for the form file (HTLM & CSS file) to the remote repository 
+To Push the latest changes for the form file (HTLM & CSS file) to the remote repository
 ___
 
 **Method:**
@@ -326,7 +329,7 @@ git checkout -b feature-add-captcha
 - While in my simple-form directory, I staged and committed the changes made to form.html by executing the command below
 
 ```powershell
-# To stage the changes 
+# To stage the changes
 git add form.html
 
 # To commit changes
@@ -428,7 +431,7 @@ I followed the steps outlined below:
 - I ensured to be in simple-form directory in my git bash terminal so as to perfectly pull the changes down to my local repository
 - Lastly, i run the below to pull the changes down to my local repository
 
- ```powershell
+```powershell
 git pull
 ```
 
