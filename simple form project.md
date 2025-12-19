@@ -69,6 +69,9 @@ git clone https://github.com/yourusername/simple-form.git
 
 ___
 
+![screenshot](Images/image-3.png)
+![screenshot](Images/image-4.png)
+
 **Outcome:**
 
 I now have a full copy of the repository on my local machine and can start working on the project safely.
@@ -105,6 +108,8 @@ git status
 ```
 
 ___
+
+![screenshot](Images/image-5.png)
 
 **Outcome:**
 
@@ -144,6 +149,8 @@ git status
 
 ___
 
+![screenshot](Images/image-6.png)
+
 **Outcome:**
 
 I successfully committed the initial version of the project. All staged files are now recorded in the Git history, allowing me to track changes and revert if necessary.
@@ -180,6 +187,8 @@ git push origin main
 - I verified on GitHub that the files (form.html and style.css) appeared in the repository.
 
 ___
+
+![screenshot](Images/image-7.png)
 
 **Result:**
 
@@ -237,6 +246,9 @@ git push origin main
 
 ___
 
+![screenshot](Images/image-8.png)
+![screenshot](Images/image-9.png)
+
 **Result:**
 
 The modification was successfully pushed to GitHub repository. The project is now safely stored in the cloud and can be accessed or collaborated on by others.
@@ -261,6 +273,7 @@ ___
 git log
 ```
 
+![screenshot](Images/image-10.png)
 ___
 
 **Result:**
@@ -296,6 +309,8 @@ git checkout  d4dcff33d6876c34a63c1446906401e7e5e7050e -- form.html
 ```
 
 ___
+
+![screenshot](Images/image-11.png)
 
 **Outcome:**
 I successfully restored the simple-form project to a previous stable version. Hence, the repository remains stable and safe for further development. Also, mistakes or unwanted changes were undone without losing the overall history
@@ -350,6 +365,10 @@ git merge feature-add-captcha
 
 ___
 
+![screenshot](Images/image-12.png)
+
+![screenshot](Images/image-13.png)
+
 **Result:**
 
 I successfully implemented the CAPTCHA feature in the feature branch. All changes were safely staged and committed. The feature-add-captcha is now ready for testing or merging into the main branch.
@@ -374,6 +393,8 @@ git push origin main
 ```
 
 ___
+
+![screenshot](Images/image-14.png)
 
 **Outcome:**
 
@@ -412,6 +433,8 @@ git checkout -- style.css
 
 ___
 
+![screenshot](Images/image-15.png)
+
 ## 12. Pulling Updates from GitHub
 
 ___
@@ -438,6 +461,8 @@ git pull
 - My local repository was updated with the latest changes from GitHub
 
 ___
+
+![screenshot](Images/image-16.png)
 
 **Outcome:**
 
