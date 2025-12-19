@@ -9,21 +9,56 @@
 <body>
     <div class="form-container">
         <h2>Contact Us</h2>
-        <form action="#" method="post">
+
+        <form action="#" method="post" onsubmit="return validateCaptcha()">
+
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Your name" required>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Your email" required>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" placeholder="Your phone number" pattern="[0-9]{10}" required>
-
             <label for="message">Message:</label>
             <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+
+            <!-- CAPTCHA Section -->
+            <label id="captcha-question"></label>
+            <div style="display: flex; gap: 10px;">
+                <input type="text" id="captcha-input" placeholder="Enter answer" required>
+                <button type="button" onclick="generateCaptcha()">↻</button>
+            </div>
 
             <button type="submit">Submit</button>
         </form>
     </div>
+
+    <script>
+        let correctAnswer = 0;
+
+        function generateCaptcha() {
+            const num1 = Math.floor(Math.random() * 10) + 1;
+            const num2 = Math.floor(Math.random() * 10) + 1;
+            correctAnswer = num1 + num2;
+
+            document.getElementById("captcha-question").innerText =
+                `CAPTCHA: What is ${num1} + ${num2}?`;
+
+            document.getElementById("captcha-input").value = "";
+        }
+
+        function validateCaptcha() {
+            const userAnswer = document.getElementById("captcha-input").value;
+
+            if (parseInt(userAnswer) !== correctAnswer) {
+                alert("Incorrect CAPTCHA. Please try again.");
+                generateCaptcha();
+                return false;
+            }
+            return true;
+        }
+
+        // Generate CAPTCHA on page load
+        window.onload = generateCaptcha;
+    </script>
 </body>
 </html>
